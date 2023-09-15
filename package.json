@@ -1,13 +1,13 @@
 {
   "name": "react-zlh-pagenation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "zdsfsdfsdf",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config config/webpack.dev.config.js",
     "build": "webpack --config config/webpack.prod.config.js",
-    "release": "np --no-yarn --no-tests --no-cleanup" 
+    "release": "np --no-yarn --no-tests --no-cleanup"
   },
   "repository": {
     "type": "git",
