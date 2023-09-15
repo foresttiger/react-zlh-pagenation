@@ -1,42 +1,33 @@
 {
-  "name": "react-zlh-pagenation",
-  "version": "1.0.2",
-  "description": "pagenation",
-  "main": "index.js",
+  "name": "react-demo-component",
+  "version": "1.0.0",
+  "description": "A test component demo",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "start": "webpack server --mode development",
-    "build": "webpack --mode development"
+    "start": "webpack-dev-server --config config/webpack.dev.config.js",
+    "build": "webpack --config config/webpack.prod.config.js",
+    "pub": "npm run build && npm publish"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/foresttiger/react-zlh-pagenation.git"
-  },
-  "author": "tiger",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/foresttiger/react-zlh-pagenation/issues"
-  },
-  "homepage": "https://github.com/foresttiger/react-zlh-pagenation#readme",
   "devDependencies": {
-    "@babel/cli": "^7.22.15",
-    "@babel/core": "^7.22.19",
-    "@babel/plugin-syntax-jsx": "^7.22.5",
-    "@babel/plugin-transform-runtime": "^7.22.15",
-    "@babel/preset-env": "^7.22.15",
-    "@babel/preset-react": "^7.22.15",
-    "babel-loader": "^9.1.3",
-    "css-loader": "^6.8.1",
-    "html-webpack-plugin": "^5.5.3",
-    "less": "^4.2.0",
-    "less-loader": "^11.1.3",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "style-loader": "^3.3.3",
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
-  },
-  "dependencies": {
-    "@babel/preset-typescript": "^7.22.15"
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.2"
   }
 }
